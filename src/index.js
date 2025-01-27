@@ -1,6 +1,6 @@
 import Data from './data';
 import React, { useEffect, useState } from "react";
-
+import ReactDOM from "react"
 
 const Blog = ({ initialPosts }) => {
     const [dynamicPosts, setDynamicPosts] = useState([]);
@@ -38,7 +38,7 @@ export async function getServerSideProps() {
     return { props: { initialPosts } };
 }
 
-export default Blog;
+
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
