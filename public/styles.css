@@ -1,0 +1,21 @@
+.flex{
+    display: flex;
+    width: 450px;
+    height: 250px;
+    align-items: center;
+    margin: 10px auto;
+}
+
+img{
+    width: 350px;
+    height: 240px;
+    /* padding: 10px; */
+}
+button{
+    font-weight: bold;
+    padding: 15px 25px;
+    /* height: 25px; */
+    align-items: center;
+    text-align: center;
+    margin: 10px;
+}

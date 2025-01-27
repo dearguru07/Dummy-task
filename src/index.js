@@ -2,8 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import Data from './data';
 
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-    <Data />
-);
+root.render(<Data />);
 
