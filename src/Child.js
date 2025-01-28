@@ -1,16 +1,38 @@
-import react from "react";
+// import react from "react";
 
-const Wrapper = ({ children }) => {
-    return <div className="wrapper">{children}</div>;
-};
+// const Wrapper = ({ children }) => {
+//     return <div className="wrapper">{children}</div>;
+// };
 
-// Usage
-const App = () => {
+// // Usage
+// const App = () => {
+//     return (
+//         <Wrapper>
+//             <h1>Hello, World!</h1>
+//             <p>This is wrapped content.</p>
+//         </Wrapper>
+//     );
+// };
+// export default App;
+
+
+const ParentComponent = (props) => {
     return (
-        <Wrapper>
-            <h1>Hello, World!</h1>
-            <p>This is wrapped content.</p>
-        </Wrapper>
+      <div>
+        <h1>Parent Component</h1>
+        {props.children}
+      </div>
     );
-};
-export default App;
+  };
+  
+  const App = () => {
+    return (
+      <ParentComponent>
+        <p>This is a child component</p>
+        <button>Click Me</button>
+      </ParentComponent>
+    );
+  };
+  
+  export default App;
+  
